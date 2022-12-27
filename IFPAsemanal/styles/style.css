@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: #F9F7F7;
+
+    height: 100vh;
+
+    font-family: 'Poppins', sans-serif;
+
+    display: grid;
+
+    grid-template-areas:
+        "left    right  right"
+         "footer footer footer";
+
+    grid-template-columns: 1fr 2fr 2fr;
+
+}
+
+
+/*LADO ESQUERDOO DO BAGULHO TODO --------------------------*/
+
+/*TODO O LADO ESQUERDO*/
+.left{
+    margin-top: 30px;
+    margin-left: 60px;  
+}
+
+/*LOGO*/
+
+.left header .logo img{
+    width: 60%;
+}
+
+/*TITULO DO PEQUENO CALENDARIO*/
+
+.left .little-calendar .little-calendar-tittle{
+
+    color: #575656;
+    text-transform: capitalize;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* margin-bottom: -10px; */
+
+}
+
+.left .little-check .little-calendar-tittle,
+.left .little-check .little-calendar-tittle div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #747171;
+
+
+
+}
+.left .little-check  .title-checklist {
+    margin-bottom: 5%;
+  
+}
+
+
+
+/*TITULO DA LITTLE CHECKBOX*/
+.left .little-check h3{
+    font-size: 16px;
+}
+
+
+
+/*LEFT LITTLE BOX*/
+
+.left .little-box{
+    padding: 20px;
+    background-color: #001A1F;
+    border-radius: 15px;
+
+    font-weight: bold;
+    
+    color: white;
+}
+
+
+
+/*LADO DIREITO DO BAGULHO TODO --------------------------*/
+.right{
+    margin-top: 30px;
+    margin-left: 60px;  
+}
+
+
+/* .calendar-principal, .dias-semanas{
+    width: 900px;
+} */
+
+.data-atual{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    margin-top: 5%;
+}
+
+.data-atual h3{
+    font-size: 1.5em;
+    text-transform: capitalize;
+
+}
+
+.dias-semanas{
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #5C5A5A;
+    background-color: #E3FFEA;
+    text-align: center;
+
+}
+
+.num{
+    font-size: 2.2em;
+}
+
+.horarios{
+    text-align: center;
+    background-color: #fff;
+}
+.hora {
+    margin-top: 55px;
+}
+
+.hora p{
+    padding: 30% 10px;
+}
+
+.horarios tr td{
+    padding: 25px 35px;
+/*     background-color: #8cb9c87c; */
+
+    margin: 2px;
+
+}
+
+.calendar-principal{
+    display: flex;
+}
+
+.dias-semanas, .horarios{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+
+.pink{
+    background-color: #c88cb37c;
+
+}
+
+.green{
+    background-color: #91c88c7c;
+
+}
+
+.yellow{
+    background-color: #c8c78c7c;
+    
+}
+
+.red{
+    background-color: #da14147c;
+    
+}
+
+
+
+
+/*FOTTERRRRRRRRRRRRRRRRRRRR---------------------*/
+
+
+footer{
+    grid-area: footer;
+    text-align: end;
+
+}
+
+
+footer img{
+    width: 120px;
+}
